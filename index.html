@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monticello</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/icon.jpg" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <img src="./img/logo.png" alt="Logo" class="header__logo-image" />
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__item">
+                <a href="#" class="header__link">About Us</a>
+              </li>
+              <li class="header__item">
+                <a href="#Projects" class="header__link">Projects</a>
+              </li>
+              <li class="header__item">
+                <a href="#News" class="header__link">News</a>
+              </li>
+              <li class="header__item">
+                <a href="#Contact" class="header__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <img
+                  src="./img/social/facebook.svg"
+                  alt="facebook"
+                  class="socials__icon"
+                />
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <img
+                  src="./img/social/twitter.svg"
+                  alt="twitter"
+                  class="socials__icon"
+                />
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <img
+                  src="./img/social/instagram.svg"
+                  alt="instagram"
+                  class="socials__icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__heading">
+          <h1 class="header__caption">SIMPLE & MODERN</h1>
+          <p class="header__title">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+        </div>
+        <div class="slider-wrapper">
+          <div class="slider-indicators">
+            <button class="indicator" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+            <button class="indicator" data-slide="3"></button>
+            <button class="indicator" data-slide="4"></button>
+            <button class="indicator" data-slide="5"></button>
+          </div>
+        </div>
+      </header>
+      <section id="Projects" class="section">
+        <div class="section__header">
+          <h2 class="section__title">WHAT WE DO</h2>
+        </div>
+        <div class="section__content">
+          <article class="card card--right">
+            <div class="card__image-bg">
+              <img src="./img/s2/blue.png" alt="" class="card__image-bgb" />
+            </div>
+            <div class="card__image-container">
+              <img
+                src="./img/s2/white.png"
+                alt="Trade Center"
+                class="card__image card__image-right"
+              />
+            </div>
+            <div class="card__details">
+              <h3 class="card__subtitle">ONE WORLD</h3>
+              <h2 class="card__title">TRADE CENTER</h2>
+              <p class="card__text">
+                Increasing prosperity in our lives can be accomplished by having
+                the right frame of mind. The truth is, our thoughts are very
+                powerful.
+              </p>
+              <button
+                class="card__button"
+                onclick="toggleDetails('more-details-1')"
+              >
+                MORE DETAILS
+              </button>
+              <p id="more-details-1" class="card__additional-text">
+                The One World Trade Center stands as a symbol of resilience and
+                hope. Its architecture is designed to inspire and empower
+                individuals to achieve greatness. By embracing a positive
+                mindset and focusing on our goals, we can harness the power
+                within us to create a prosperous future.
+              </p>
+              <div class="card__location">
+                &#128205; New York City, United States
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--left">
+            <div class="card__image-bgp">
+              <img src="./img/s2/purple.png" alt="" class="card__image-bgp" />
+            </div>
+            <div class="card__image-container">
+              <img
+                src="./img/s2/builing.png"
+                alt="Commerce Centre"
+                class="card__image card__image-left"
+              />
+            </div>
+            <div class="card__details">
+              <h3 class="card__subtitle">INTERNATIONAL</h3>
+              <h2 class="card__title">COMMERCE CENTRE</h2>
+              <p class="card__text">
+                Successful businesses have many things in common, today we’ll
+                look at the big ‘R’ of recognition and how a digital advertising
+                network may help.
+              </p>
+              <button
+                class="card__button"
+                onclick="toggleDetails('more-details-2')"
+              >
+                MORE DETAILS
+              </button>
+              <p id="more-details-2" class="card__additional-text">
+                The International Commerce Centre is a beacon of global business
+                excellence. It demonstrates how innovation, strategic marketing,
+                and brand recognition are crucial to success. By leveraging
+                digital advertising networks, businesses can enhance their
+                visibility and establish a strong market presence, leading to
+                sustained growth and success.
+              </p>
+              <div class="card__location">&#128205; Hong Kong - 1588 feet</div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="News" class="news">
+        <div class="news__header">
+          <h2 class="news__title">LATEST NEWS</h2>
+        </div>
+        <div class="news__controls">
+          <button class="news__prev">&#10094;</button>
+          <div class="news__content-wrapper">
+            <div class="news__content">
+              <article class="news__item">
+                <img
+                  src="./img/s3/second.jpg"
+                  alt="Beauty of The Great"
+                  class="news__image"
+                />
+                <div class="news__card">
+                  <h3 class="news__headline">
+                    EXPLORE CUTTING-EDGE ARCHITECTURE.
+                  </h3>
+                  <p class="news__description">
+                    Discover innovative design trends that redefine spaces.
+                  </p>
+                  <div class="news__meta">
+                    <img
+                      src="./img/s3/first_face.jpg"
+                      alt="
+                      Elijah Hiett"
+                      class="news__author-image"
+                    />
+                    <div class="news__author-info">
+                      <span class="news__author-name"> Elijah Hiett</span>
+                      <span class="news__date">13 Oct 2023</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="news__item">
+                <img
+                  src="./img/s4/img_5.png"
+                  alt="Beauty of The Great"
+                  class="news__image"
+                />
+                <div class="news__card">
+                  <h3 class="news__headline">MASTER THE ART OF MINIMALISM.</h3>
+                  <p class="news__description">
+                    Embrace simplicity in design to enhance your living space.
+                  </p>
+                  <div class="news__meta">
+                    <img
+                      src="./img/s3/second_face.jpg"
+                      alt="Rachel McDermott"
+                      class="news__author-image"
+                    />
+                    <div class="news__author-info">
+                      <span class="news__author-name">Rachel McDermott</span>
+                      <span class="news__date">20 Nov 2018</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="news__item">
+                <img
+                  src="./img/s3/alja.png"
+                  alt="Beauty of The Great"
+                  class="news__image"
+                />
+                <div class="news__card">
+                  <h3 class="news__headline">
+                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                  </h3>
+                  <p class="news__description">
+                    Free directories: directories are perfect for customers that
+                    are searching for...
+                  </p>
+                  <div class="news__meta">
+                    <img
+                      src="./img/s3/alja_face.png"
+                      alt="Alja Brun"
+                      class="news__author-image"
+                    />
+                    <div class="news__author-info">
+                      <span class="news__author-name">Alja Brun</span>
+                      <span class="news__date">20 Jan 2020</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="news__item">
+                <img
+                  src="./img/s3/dominic.png"
+                  alt="Effective Advertising"
+                  class="news__image"
+                />
+                <div class="news__card">
+                  <h3 class="news__headline">
+                    EFFECTIVE ADVERTISING POINTERS.
+                  </h3>
+                  <p class="news__description">
+                    Having a home based business is a wonderful asset to your
+                    life...
+                  </p>
+                  <div class="news__meta">
+                    <img
+                      src="./img/s3/dominic_face.png"
+                      alt="Dominic Freeman"
+                      class="news__author-image"
+                    />
+                    <div class="news__author-info">
+                      <span class="news__author-name">Dominic Freeman</span>
+                      <span class="news__date">13 Dec 2019</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="news__item">
+                <img
+                  src="./img/s3/alice.png"
+                  alt="Hypnotize Yourself"
+                  class="news__image"
+                />
+                <div class="news__card">
+                  <h3 class="news__headline">
+                    HYPNOTIZE YOURSELF INTO THE GHOST.
+                  </h3>
+                  <p class="news__description">
+                    There are many things that are important to catalog
+                    design...
+                  </p>
+                  <div class="news__meta">
+                    <img
+                      src="./img/s3/alice_face.png"
+                      alt="Alice Ward"
+                      class="news__author-image"
+                    />
+                    <div class="news__author-info">
+                      <span class="news__author-name">Alice Ward</span>
+                      <span class="news__date">30 Nov 2019</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button class="news__next">&#10095;</button>
+        </div>
+        <div class="news__indicators"></div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="gallery__title">GALLERY</h2>
+        <div class="gallery__grid" id="galleryGrid">
+          <div class="gallery__item gallery__item--large">
+            <img
+              src="./img/s4/img_1.jpeg"
+              alt="Large Gallery Image"
+              class="gallery__image"
+            />
+          </div>
+          <div class="gallery__item">
+            <img
+              src="./img/s4/img_2.png"
+              alt="Gallery Image 2"
+              class="gallery__image"
+            />
+          </div>
+          <div class="gallery__item">
+            <img
+              src="./img/s4/img_3.png"
+              alt="Gallery Image 3"
+              class="gallery__image"
+            />
+          </div>
+          <div class="gallery__item">
+            <img
+              src="./img/s4/img_4.png"
+              alt="Gallery Image 4"
+              class="gallery__image"
+            />
+          </div>
+          <div class="gallery__item">
+            <img
+              src="./img/s4/img_5.png"
+              alt="Gallery Image 5"
+              class="gallery__image"
+            />
+          </div>
+        </div>
+        <button class="gallery__button" onclick="loadMoreImages()">
+          SEE MORE
+        </button>
+      </section>
+      <section id="Contact" class="contact-section">
+        <div class="contact-section__map" id="map">
+          <script
+            async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVrtYYKddrD4v-3BOgLYkvgHMOuIsX1Kk&callback=init"
+          ></script>
+        </div>
+        <div class="contact-section__content">
+          <h2 class="contact-section__title">GET IN TOUCH</h2>
+          <div class="contact-section__flex">
+            <div class="contact-section__details">
+              <p class="contact-section__detail">
+                &#128205; 91 Nolan Extensions Suite 670
+              </p>
+              <p class="contact-section__detail">&#9742; +001 356-868-2454</p>
+              <p class="contact-section__detail">
+                &#9993; montichello@service.com
+              </p>
+              <p class="contact-section__detail">
+                &#128339; From 07:05AM to 19:30PM
+              </p>
+            </div>
+            <div class="contact-section__info">
+              <form class="contact-section__form">
+                <div class="contact-section__form-group">
+                  <label for="name" class="contact-section__label"></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="contact-section__input"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="contact-section__form-group">
+                  <label for="email" class="contact-section__label"></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="contact-section__input"
+                    placeholder="Email"
+                  />
+                </div>
+                <button type="submit" class="contact-section__submit">
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img
+              src="./img/logo.png"
+              alt="Monticello International Group Logo"
+              class="footer__logo-image"
+            />
+            <p class="footer__copyright">Copyrights © 2020 Monticello</p>
+          </div>
+          <div class="footer__social">
+            <nav>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img
+                      src="./img/social/facebook.svg"
+                      alt="facebook"
+                      class="socials__icon"
+                    />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img
+                      src="./img/social/twitter.svg"
+                      alt="twitter"
+                      class="socials__icon"
+                    />
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img
+                      src="./img/social/instagram.svg"
+                      alt="instagram"
+                      class="socials__icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
